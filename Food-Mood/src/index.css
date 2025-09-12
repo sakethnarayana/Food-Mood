@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom styles for light/dark mode transitions */
+.transition-theme {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Food card hover effect */
+.food-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.food-card:hover {
+  transform: translateY(-4px);
+}
